@@ -1,0 +1,16 @@
+@use "../abstracts/index" as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: v.$primary-font;
+  font-weight: 400;
+  line-height: 1.5;
+  background: v.$color-bg;
+  color: v.$color-text;
+}
