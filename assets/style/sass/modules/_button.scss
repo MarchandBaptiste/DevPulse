@@ -1,0 +1,8 @@
+@use "../abstracts/index" as v;
+
+.btn {
+  padding: v.$spacer v.$spacer-lg;
+  background-color: v.$color-primary;
+  color: v.$color-bg;
+  border-radius: 8px;
+}

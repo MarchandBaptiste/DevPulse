@@ -4,3 +4,13 @@
   background-color: v.$color-dark;
   width: 0 auto;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: v.$spacer;
+  padding: v.$spacer-lg 0;
+  color: v.$color-border;
+}
