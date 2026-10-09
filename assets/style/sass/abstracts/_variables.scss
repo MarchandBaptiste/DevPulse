@@ -1,7 +1,7 @@
 // Colors
 $color-primary: #3b82f6;
 $color-secondary: #10b981;
-$color-dark: #0f172a;
+$color-dark: #425169;
 $color-bg: #f8fafc;
 $color-card-bg: #ffffff;
 $color-text: #1e293b;
@@ -28,3 +28,10 @@ $spacer-lg: 2rem;
 $border-radius: 0.5rem;
 $border-radius-lg: 0.75rem;
 $border-radius-full: 9999px;
+
+// breakpoints
+$breakpoints: (
+  lg: 1024px,
+  md: 768px,
+  sm: 576px,
+);

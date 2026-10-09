@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevPulse Agency - Projet SASS</title>
+    <script src="./assets/JS/script.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
@@ -13,18 +14,30 @@
   </head>
   <body>
     <!-- ================= 1. NAVIGATION ================= -->
-    <header>
-      <div>
-        <a href="#">DevPulse<span>.</span></a>
-        <nav>
-          <ul>
-            <li><a href="#features">Fonctionnalités</a></li>
-            <li><a href="#pricing">Tarifs</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <header class="header l-header">
+      <div class="header__nav">
+        <a href="#" class="header__nav-link">DevPulse<span>.</span></a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__nav-item">
+              <a href="#features" class="nav__nav-link">Fonctionnalités</a>
+            </li>
+            <li class="nav__nav-item">
+              <a href="#pricing" class="nav__nav-link is-active">Tarifs</a>
+            </li>
+            <li class="nav__nav-item">
+              <a href="#contact" class="nav__nav-link">Contact</a>
+            </li>
           </ul>
+          <button class="nav__menu-burger" aria-label="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </nav>
       </div>
     </header>
+    <div class="overlay"></div>
 
     <main>
       <!-- ================= 2. HERO SECTION ================= -->
