@@ -1,0 +1,134 @@
+@use "../abstracts/index" as v;
+@use "../mixins/index" as m;
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: v.$spacer;
+}
+
+.header__nav-link {
+  color: v.$color-bg;
+  text-decoration: none;
+  font-size: v.$size-title;
+  font-weight: bolder;
+}
+
+.nav {
+  &__list {
+    list-style: none;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: min(280px, 80vw);
+    padding: v.$spacer-lg;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: v.$spacer;
+    background-color: v.$color-text;
+    transform: translateX(100%);
+    visibility: hidden;
+    transition:
+      transform 0.3s ease,
+      visibility 0.3s ease;
+    z-index: 1001;
+
+    &--open {
+      transform: translateX(0);
+      visibility: visible;
+    }
+    @include m.respond-to("md") {
+      position: static;
+      transform: none;
+      visibility: visible;
+      height: auto;
+      width: auto;
+      padding: 0;
+      flex-direction: row;
+      background-color: transparent;
+    }
+  }
+  &__nav-item {
+    position: relative;
+  }
+
+  &__nav-link {
+    color: v.$color-bg;
+    text-decoration: none;
+    position: relative;
+    &:hover::after {
+      width: 100%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      width: 0%;
+      height: 3px;
+      display: block;
+      background-color: v.$color-primary;
+      transition: width 0.3s ease;
+    }
+  }
+
+  &__menu-burger {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    z-index: 1002;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include m.respond-to("md") {
+      display: none;
+    }
+
+    span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background-color: v.$color-bg;
+      border-radius: 3px;
+      transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+    }
+
+    &--open span:nth-child(1) {
+      transform: translateY(13.5px) rotate(-45deg);
+    }
+
+    &--open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    &--open span:nth-child(3) {
+      transform: translateY(-13.5px) rotate(45deg);
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+  z-index: 1000;
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
