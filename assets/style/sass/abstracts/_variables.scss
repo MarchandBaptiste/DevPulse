@@ -1,15 +1,37 @@
 // Colors
 $color-primary: #3b82f6;
-$color-secondary: #ef4444;
-$color-bg: #ffffff;
-$color-text: #000000;
+$color-secondary: #10b981;
+$color-dark: #425169;
+$color-bg: #f8fafc;
+$color-card-bg: #ffffff;
+$color-text: #1e293b;
+$color-border: #e2e8f0;
+// Alerts Colors
+$color-success-bg: #d1fae5;
+$color-success-text: #065f46;
+$color-warning-bg: #fef3c7;
+$color-warning-text: #92400e;
+$color-danger-bg: #fee2e2;
+$color-danger-text: #991b1b;
 
 // Typo
-$primary-font: 'DM Sans', sans-serif;
-$size-title: 2rem;
+$primary-font: "Inter", sans-serif;
+$size-title: 1.5rem;
 $size-content: 1rem;
 
 // Spacings
 $spacer: 1rem;
 $spacer-sm: 0.5rem;
 $spacer-lg: 2rem;
+
+// Border Radius
+$border-radius: 0.5rem;
+$border-radius-lg: 0.75rem;
+$border-radius-full: 9999px;
+
+// breakpoints
+$breakpoints: (
+  lg: 1024px,
+  md: 768px,
+  sm: 576px,
+);
