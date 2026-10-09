@@ -1,0 +1,25 @@
+@use "../abstracts/index" as v;
+
+.l-hero {
+  background-color: v.$color-text;
+  color: v.$color-border;
+  padding: v.$spacer;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: v.$spacer-sm;
+  text-align: center;
+  &__title {
+    font-size: v.$size-title;
+  }
+  &__description {
+    font-size: v.$size-content;
+  }
+  &__btn {
+    margin-top: v.$spacer-sm;
+  }
+}
