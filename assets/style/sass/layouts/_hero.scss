@@ -22,4 +22,7 @@
   &__btn {
     margin-top: v.$spacer-sm;
   }
+  &__btn:hover {
+    background-color: v.$color-dark;
+  }
 }
