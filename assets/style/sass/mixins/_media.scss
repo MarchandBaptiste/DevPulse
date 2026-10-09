@@ -1,0 +1,12 @@
+@use "sass:map";
+@use "../abstracts/index" as v;
+
+@mixin respond-to($breakpoint) {
+  @if map.has-key(v.$breakpoints, $breakpoint) {
+    @media screen and (min-width: map.get(v.$breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Le point d'arrêt `#{$breakpoint}` n'existe pas `$breakpoints`.";
+  }
+}
