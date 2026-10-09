@@ -140,6 +140,35 @@ body {
   border-radius: 8px;
 }
 
+.l-alerts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: start;
+  padding: 2rem;
+}
+
+.alert {
+  padding: 1rem;
+  width: 100%;
+}
+.alert--success {
+  background-color: #d1fae5;
+  border-left: 4px solid #09976f;
+  color: #09976f;
+}
+.alert--warning {
+  background-color: rgba(253, 244, 207, 0.6470588235);
+  border-left: 4px solid #e2a936;
+  color: #e2a936;
+}
+.alert--danger {
+  background-color: #fee2e2;
+  border-left: 4px solid #cd1b1b;
+  color: #cd1b1b;
+}
+
 .is-active::after {
   content: "";
   position: absolute;

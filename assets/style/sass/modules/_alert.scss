@@ -1,0 +1,30 @@
+@use "../abstracts/index" as v;
+
+.l-alerts {
+  display: flex;
+  flex-direction: column;
+  gap: v.$spacer-sm;
+  justify-content: center;
+  align-items: start;
+  padding: v.$spacer-lg;
+}
+
+.alert {
+  padding: v.$spacer;
+  width: 100%;
+  &--success {
+    background-color: v.$color-success-bg;
+    border-left: 4px solid v.$color-success-text;
+    color: v.$color-success-text;
+  }
+  &--warning {
+    background-color: v.$color-warning-bg;
+    border-left: 4px solid v.$color-warning-text;
+    color: v.$color-warning-text;
+  }
+  &--danger {
+    background-color: v.$color-danger-bg;
+    border-left: 4px solid v.$color-danger-text;
+    color: v.$color-danger-text;
+  }
+}
