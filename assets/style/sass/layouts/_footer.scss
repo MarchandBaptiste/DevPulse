@@ -1,0 +1,6 @@
+@use "../abstracts/index" as v;
+
+.l-footer {
+  background-color: v.$color-dark;
+  width: 0 auto;
+}
