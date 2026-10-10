@@ -1,0 +1,23 @@
+@use "../abstracts/index" as v;
+
+.card {
+  background-color: v.$color-card-bg;
+  border: 1px solid v.$color-border;
+  border-radius: v.$border-radius;
+  padding: v.$spacer;
+  box-shadow: 0px 0px 10px v.$color-border;
+  &__header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: v.$spacer-sm;
+  }
+  &__badge {
+    color: v.$color-primary;
+    background-color: #3b83f648;
+    padding: 4px;
+    border-radius: v.$border-radius;
+  }
+}

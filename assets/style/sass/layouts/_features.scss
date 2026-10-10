@@ -1,0 +1,17 @@
+@use "../abstracts/index" as v;
+
+.l-features {
+  display: flex;
+  flex-direction: column;
+  gap: v.$spacer-lg;
+  justify-content: center;
+  align-items: center;
+  padding: v.$spacer v.$spacer-lg;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: v.$spacer;
+  width: 100%;
+}
