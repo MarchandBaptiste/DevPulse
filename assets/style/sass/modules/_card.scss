@@ -13,7 +13,7 @@
   }
   &__badge {
     color: v.$color-primary;
-    background-color: #3b83f648;
+    background-color: v.tint(v.$color-primary, 0.15);
     padding: 4px;
     border-radius: v.$border-radius;
   }

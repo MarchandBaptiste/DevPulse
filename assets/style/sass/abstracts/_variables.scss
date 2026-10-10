@@ -7,6 +7,21 @@ $color-card-bg: #ffffff;
 $color-text: #1e293b;
 $color-border: #e2e8f0;
 // Alerts Colors
+$alerts: (
+  success: (
+    bg: #d1fae5,
+    text: #09976f,
+  ),
+  warning: (
+    bg: #fdf4cfa5,
+    text: #e2a936,
+  ),
+  danger: (
+    bg: #fee2e2,
+    text: #cd1b1b,
+  ),
+);
+
 $color-success-bg: #d1fae5;
 $color-success-text: #09976f;
 $color-warning-bg: #fdf4cfa5;
