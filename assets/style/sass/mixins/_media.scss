@@ -10,3 +10,11 @@
     @warn "Le point d'arrêt `#{$breakpoint}` n'existe pas `$breakpoints`.";
   }
 }
+
+@mixin card($border-color: v.$color-border) {
+  background-color: v.$color-card-bg;
+  border: 1px solid $border-color;
+  border-radius: v.$border-radius;
+  padding: v.$spacer;
+  box-shadow: 0px 0px 10px $border-color;
+}
