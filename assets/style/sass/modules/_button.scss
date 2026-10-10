@@ -6,3 +6,8 @@
   color: v.$color-bg;
   border-radius: 8px;
 }
+
+.btn:hover {
+  cursor: pointer;
+  background-color: v.$color-secondary;
+}

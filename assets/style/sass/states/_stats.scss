@@ -1,5 +1,4 @@
 @use "../abstracts/index" as v;
-@use "../mixins/index" as m;
 
 .is-active::after {
   content: "";
@@ -9,5 +8,4 @@
   height: 3px;
   display: block;
   background-color: v.$color-primary;
-  transition: right 0.3s ease;
 }

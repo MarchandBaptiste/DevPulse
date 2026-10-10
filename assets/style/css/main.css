@@ -62,18 +62,18 @@ body {
     background-color: transparent;
   }
 }
-.nav__nav-item {
+.nav__item {
   position: relative;
 }
-.nav__nav-link {
+.nav__link {
   color: #f8fafc;
   text-decoration: none;
   position: relative;
 }
-.nav__nav-link:hover::after {
+.nav__link:hover::after {
   width: 100%;
 }
-.nav__nav-link::after {
+.nav__link::after {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -122,7 +122,7 @@ body {
 .overlay {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(30, 41, 59, 0.15);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -138,6 +138,11 @@ body {
   background-color: #3b82f6;
   color: #f8fafc;
   border-radius: 8px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #10b981;
 }
 
 .l-alerts {
@@ -258,7 +263,6 @@ body {
   height: 3px;
   display: block;
   background-color: #3b82f6;
-  transition: right 0.3s ease;
 }
 
 .l-header {
@@ -316,13 +320,7 @@ body {
   padding: 1rem 2rem;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-  width: 100%;
-}
-
+.cards,
 .plans {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

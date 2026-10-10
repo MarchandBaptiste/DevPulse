@@ -9,13 +9,7 @@
   padding: v.$spacer v.$spacer-lg;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: v.$spacer;
-  width: 100%;
-}
-
+.cards,
 .plans {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
