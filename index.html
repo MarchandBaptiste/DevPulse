@@ -69,8 +69,8 @@
       </section>
 
       <!-- ================= 4. FEATURES SECTION (Grille) ================= -->
-      <section id="features" class="l-features">
-        <h2 class="l-features__title">Nos Fonctionnalités Clés</h2>
+      <section id="features" class="l-grid">
+        <h2 class="l-grid__title">Nos Fonctionnalités Clés</h2>
         <div class="cards">
           <div class="card">
             <div class="card__header">
@@ -96,28 +96,32 @@
       </section>
 
       <!-- ================= 5. PRICING SECTION (Tarifs) ================= -->
-      <section id="pricing">
-        <h2>Nos Tarifs</h2>
-        <div>
-          <div>
-            <h3>Standard</h3>
-            <p>29€<span>/mois</span></p>
-            <ul>
-              <li>Architecture SMACSS de base</li>
-              <li>Support communautaire</li>
+      <section id="pricing" class="l-grid">
+        <h2 class="l-grid__title">Nos Tarifs</h2>
+        <div class="plans">
+          <div class="plan">
+            <h3 class="plan__title">Standard</h3>
+            <p class="plan__price">
+              29€<span class="plan__period">/mois</span>
+            </p>
+            <ul class="plan__items">
+              <li class="plan__item">Architecture SMACSS de base</li>
+              <li class="plan__item">Support communautaire</li>
             </ul>
-            <a href="#">Choisir</a>
+            <a href="#" class="plan__btn btn">Choisir</a>
           </div>
-          <div>
-            <span>Le plus populaire</span>
-            <h3>Pro Agency</h3>
-            <p>79€<span>/mois</span></p>
-            <ul>
-              <li>Architecture complète & Avancée</li>
-              <li>Mixins, Boucles & Fonctions SASS</li>
-              <li>Support prioritaire 24/7</li>
+          <div class="plan plan--pro">
+            <span class="plan__badge">Le plus populaire</span>
+            <h3 class="plan__title">Pro Agency</h3>
+            <p class="plan__price">
+              79€<span class="plan__period">/mois</span>
+            </p>
+            <ul class="plan__items">
+              <li class="plan__item">Architecture complète & Avancée</li>
+              <li class="plan__item">Mixins, Boucles & Fonctions SASS</li>
+              <li class="plan__item">Support prioritaire 24/7</li>
             </ul>
-            <a href="#">Choisir Pro</a>
+            <a href="#" class="plan__btn--pro btn">Choisir Pro</a>
           </div>
         </div>
       </section>
