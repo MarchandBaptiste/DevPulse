@@ -1,7 +1,7 @@
 const menuBtn = document.querySelector(".nav__menu-burger");
 const navList = document.querySelector(".nav__list");
 const overlay = document.querySelector(".overlay");
-const navLinks = document.querySelectorAll(".nav__nav-link");
+const navLinks = document.querySelectorAll(".nav__link");
 
 function setMenu(isOpen) {
   menuBtn.classList.toggle("nav__menu-burger--open", isOpen);
