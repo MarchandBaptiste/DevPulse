@@ -186,7 +186,7 @@ body {
 }
 .card__badge {
   color: #3b82f6;
-  background-color: rgba(59, 131, 246, 0.2823529412);
+  background-color: rgba(59, 130, 246, 0.15);
   padding: 4px;
   border-radius: 0.5rem;
 }
